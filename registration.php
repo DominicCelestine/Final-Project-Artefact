@@ -14,6 +14,9 @@ if (isset($_POST["registration"])) {
     $password = $_POST["password"];
 
 
+    $password = password_hash($password, PASSWORD_DEFAULT);
+
+
     $sql = "INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `password`, `reg_date`, `user_type`) VALUES (NULL, ' $first_name', '$last_name', '$email', '$password', current_timestamp(), 'user');";
 
     if (mysqli_query($conn, $sql)) {
