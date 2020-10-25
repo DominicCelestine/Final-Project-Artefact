@@ -3,7 +3,7 @@
 session_start();
 
 
-if (isset($POST["login"])) {
+if (isset($_POST["login"])) {
 
     //check if a button named login was clicked
 
