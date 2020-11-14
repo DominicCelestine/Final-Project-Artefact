@@ -132,9 +132,11 @@
 
                     //get product information from the database
 
+                    $item_id = $row["item_id"];
                     $item_title = $row["item_title"];
                     $item_price = $row["item_price"];
                     $item_image = $row["item_image"];
+                    $url = "details.php?id=$item_id";
 
 
 
@@ -153,7 +155,7 @@
                                 <div class="price">
                                     <span class="rupee-icon">₹</span> <?php echo $item_price; ?>
                                 </div>
-                                <a href="#" class="blue-btn">Add to cart</a>
+                                <a href="<?php echo $url; ?>" class="blue-btn">Add to cart</a>
                             </div>
                         </div>
                     </div>
