@@ -40,7 +40,7 @@ if (isset($_POST["login"])) {
                 $_SESSION["user_id"] = $row["user_id"];
                 $_SESSION["first_name"] = $row["first_name"];
                 $_SESSION["last_name"] = $row["last_name"];
-                $_SESSION["user_id"] = $row["email"];
+                $_SESSION["email"] = $row["email"];
                 $_SESSION["user_type"] = $row["user_type"];
 
                 header("location: homepage.php");
