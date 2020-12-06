@@ -15,7 +15,7 @@ if (isset($_GET["id"])) {
 
 
 
-
+include "code.isLoggedIn.php";
 
 include "connection.php";
 
