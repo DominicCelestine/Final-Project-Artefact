@@ -1,4 +1,6 @@
-<?php include "header.php"; ?>
+<?php 
+session_start();
+include "header.php"; ?>
 
 
 <h1>Store</h1>
@@ -153,9 +155,9 @@
                             <div class="product-bottom">
                                 <div class="product-name"><?php echo $item_title; ?></div>
                                 <div class="price">
-                                    <span class="rupee-icon">₹</span> <?php echo $item_price; ?>
+                                    <span class="rupee-icon">$</span> <?php echo $item_price; ?>
                                 </div>
-                                <a href="<?php echo $url; ?>" class="blue-btn">Add to cart</a>
+                                <a href="<?php echo $url; ?>" class="blue-btn">Details</a>
                             </div>
                         </div>
                     </div>
@@ -177,55 +179,8 @@
 
         </div>
     </div>
-    <div style="text-align:center;font-size:14px;padding-top:20px;padding-bottom:20px;">Get free icon packs for your next project at <a href="http://iiicons.in/" target="_blank" style="color:#ff5e63;font-weight:bold;">www.iiicons.in</a></div>
+    
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

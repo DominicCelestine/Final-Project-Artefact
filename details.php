@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 
 
 
@@ -38,28 +38,6 @@ if (mysqli_num_rows($result) > 0) {
 
 
 include "header.php"; ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -315,11 +293,11 @@ include "header.php"; ?>
                 <div class="row">
                     <div class="col-12">
                         <div class="breadcrumb-content text-center">
-                            <h1 class="breadmome-name breadcrumbs-title">Lorem Ipsum is simply dummy text</h1>
+                        <h1 class="single-product-name"><?php echo "$item_title"; ?></h1>
                             <nav class="" role="navigation" aria-label="breadcrumbs">
                                 <ul class="breadcrumb-list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Sport & Outdoor</a><span>Lorem Ipsum is simply dummy text</span></li>
+                                    <li><a href="homepage.php">Home</a></li>
+                                    <li><a href="store.php">Shop Here</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -338,24 +316,7 @@ include "header.php"; ?>
                                 <img id="ProductPhotoImg" class="product-zoom" data-image-id="" alt="12. Aliexpress dropshipping by oberlo" data-zoom-image="<?php echo $item_image; ?>" src="<?php echo $item_image; ?>">
 
                             </div>
-                            <div id="ProductThumbs" class="product-thumbnail owl-carousel">
-                                <a class="product-single__thumbnail active" href="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/36_1024x1024.jpg?v=1544416552" data-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/36_1024x1024.jpg?v=1544416552" data-zoom-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/36_1024x1024.jpg?v=1544416552" data-image-id="6995357106246">
-                                    <img src="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/36_compact.jpg?v=1544416552" alt="12. Aliexpress dropshipping by oberlo"></a>
-
-                                <a class="product-single__thumbnail " href="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/40_1024x1024.jpg?v=1544416552" data-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/40_1024x1024.jpg?v=1544416552" data-zoom-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/40_1024x1024.jpg?v=1544416552" data-image-id="6995358023750">
-                                    <img src="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/40_compact.jpg?v=1544416552" alt="12. Aliexpress dropshipping by oberlo"></a>
-
-                                <a class="product-single__thumbnail " href="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/37_1024x1024.jpg?v=1544416552" data-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/37_1024x1024.jpg?v=1544416552" data-zoom-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/37_1024x1024.jpg?v=1544416552" data-image-id="6995357302854">
-                                    <img src="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/37_compact.jpg?v=1544416552" alt="12. Aliexpress dropshipping by oberlo"></a>
-
-                                <a class="product-single__thumbnail " href="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/38_1024x1024.jpg?v=1544416552" data-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/38_1024x1024.jpg?v=1544416552" data-zoom-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/38_1024x1024.jpg?v=1544416552" data-image-id="6995357532230">
-                                    <img src="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/38_compact.jpg?v=1544416552" alt="12. Aliexpress dropshipping by oberlo"></a>
-
-                                <a class="product-single__thumbnail " href="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/39_1024x1024.jpg?v=1544416552" data-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/39_1024x1024.jpg?v=1544416552" data-zoom-image="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/39_1024x1024.jpg?v=1544416552" data-image-id="6995357728838">
-                                    <img src="http://cdn.shopify.com/s/files/1/0067/5617/1846/products/39_compact.jpg?v=1544416552" alt="12. Aliexpress dropshipping by oberlo"></a>
-
                             </div>
-                        </div>
                         <div class="col-md-7">
                             <div class="single-product-content">
                                 <form method="post" id="AddToCartForm" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data">
@@ -365,11 +326,11 @@ include "header.php"; ?>
                                         <div class="single-product-reviews">
                                             <span class="shopify-product-reviews-badge" data-id="1912078270534"></span>
                                         </div>
-                                        <div class="product-sku">SKU: <span class="variant-sku">YQT71020193</span></div>
+                                        
                                         <div class="single-product-price">
                                             <div class="product-discount"><span class="price" id="ProductPrice"><span class=money>$<?php echo $item_price; ?></span></span></div>
                                         </div>
-                                        <div class="product-info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div class="product-info"><?php echo "$item_description"; ?></div>
 
                                         <div class="single-product-action">
                                             <div class="product-variant-option">
@@ -403,12 +364,8 @@ include "header.php"; ?>
                                                     <input class="cart-plus-minus-box" type="text" name="quantity" value="1">
                                                 </div>
                                                 <div class="add">
-                                                    <button type="submit" class="add-to-cart ajax-spin-cart" id="AddToCart">
-                                                        <i class="ion-bag"></i>
-                                                        <span class="list-cart-title cart-title" id="AddToCartText">Add to cart</span>
-                                                    </button>
 
-                                                    <a href="<?php echo $url; ?>">Add to Cart</a>
+                                                    <a class="add-to-cart ajax-spin-cart" href="<?php echo $url; ?>">Add to Cart</a>
 
 
 
@@ -425,7 +382,7 @@ include "header.php"; ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="secure-payment"><img src="http://cdn.shopify.com/s/files/1/0067/5617/1846/files/guaranteed_safe_checkout1.png?v=1545216773"></div>
+                                            
                                         </div>
                                     </div>
                                 </form>
@@ -512,4 +469,6 @@ include "header.php"; ?>
 </div>
 
 
-<?php include "footer.php"; ?>
+
+<?php 
+include "footer.php"; ?>
