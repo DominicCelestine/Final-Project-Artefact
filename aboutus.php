@@ -87,7 +87,7 @@ html {
 <div class="about-section">
   <h1><bold>About Us</bold></h1></div>
     <div class="about">
-        <p>Oneque Supermarket is an  on-demand grocery delivery, which launched in 2017 in Trinidad, has loyal customers nationwide.</p>
+        <p>Oneque Supermarket is an  on-demand grocery delivery, which launched in 2020 in Trinidad, has loyal customers nationwide.</p>
         <p>Due to the current circumstances, most of us are quite limited with our grocery shopping opportunities.</p>
         <p>Oneque Supermarket offers a fixed shipping cost regardless of the size of the order, with delivery available within the same day.</p>
         <p>We ensure 100% customer satisfaction because we care about their customers. Our products are of high quality and the groceries are fresh.</p>
