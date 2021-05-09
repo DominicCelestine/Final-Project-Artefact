@@ -28,6 +28,7 @@ if (mysqli_num_rows($result) > 0) {
         $item_image = $row["item_image"];
         $item_price = $row["item_price"];
         $url = "code.addToCart.php?id=$item_id";
+        $page = "details.php?id=$item_id";
     }
 } else {
     echo "0 results";
@@ -467,8 +468,14 @@ include "header.php"; ?>
         </div>
     </main>
 </div>
+<?php
+
+include "code.reviews.php";
 
 
+
+
+?>
 
 <?php 
 include "footer.php"; ?>

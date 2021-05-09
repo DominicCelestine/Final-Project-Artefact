@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "template";
+$dbname = "onequesupermarket";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -188,4 +188,5 @@ border: none !important;
 		 </div><!--/container -->
 		</section>
 
-<?php include "footer.php"; ?>
+<?php include "recommender.php";
+include "footer.php"; ?>

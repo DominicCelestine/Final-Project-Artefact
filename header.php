@@ -36,14 +36,15 @@
                     <a class="nav-link" href="homepage.php">Homepage</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="aboutus.php">About Us</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="store.php">Store</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cart.php">Cart</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="review.php">Review</a>
-                </li>
+                
 
                 <?php
 
