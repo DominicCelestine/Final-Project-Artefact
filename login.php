@@ -54,15 +54,7 @@ if (isset($_POST["login"])) {
     }
 }
 
-
-
-
-
-
 include "header.php"; ?>
-
-
-
 
 
 <!DOCTYPE html>
