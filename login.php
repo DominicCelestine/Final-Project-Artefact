@@ -27,7 +27,7 @@ if (isset($_POST["login"])) {
         // output data of each row
 
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "Incorrect email or Password";
+            echo "Incorrect email or Password.";
 
 
             //get inforamtion from the database
