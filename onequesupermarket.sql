@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2021 at 12:54 AM
+-- Generation Time: May 14, 2021 at 03:55 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.10
 
@@ -52,10 +52,14 @@ INSERT INTO `cart` (`cart_id`, `user_id`, `item_id`, `cart_item_added`, `cart-it
 (16, 1, 4, '2021-05-06 10:01:32', 1, 'cart'),
 (19, 9, 5, '2021-05-07 12:28:45', 1, 'purchased'),
 (20, 9, 6, '2021-05-07 12:28:51', 1, 'purchased'),
-(21, 9, 5, '2021-05-07 12:38:52', 1, 'cart'),
-(25, 9, 4, '2021-05-09 10:51:12', 1, 'cart'),
-(26, 9, 3, '2021-05-09 10:52:06', 1, 'cart'),
-(27, 1, 4, '2021-05-09 12:12:59', 1, 'cart');
+(27, 1, 4, '2021-05-09 12:12:59', 1, 'cart'),
+(29, 13, 4, '2021-05-10 09:17:01', 1, 'purchased'),
+(31, 13, 4, '2021-05-10 11:49:49', 1, 'cart'),
+(32, 13, 3, '2021-05-11 19:32:15', 1, 'cart'),
+(33, 13, 9, '2021-05-11 19:38:46', 1, 'cart'),
+(35, 9, 8, '2021-05-13 20:46:24', 1, 'purchased'),
+(36, 9, 8, '2021-05-13 20:46:39', 1, 'purchased'),
+(37, 9, 4, '2021-05-13 20:46:54', 1, 'purchased');
 
 -- --------------------------------------------------------
 
@@ -130,7 +134,11 @@ INSERT INTO `purchases` (`purchase_id`, `item_id`, `purchase_item_price`, `purch
 (6, 3, 12000.00, 0, '2021-05-02 20:26:30', 4),
 (7, 3, 12000.00, 0, '2021-05-06 08:58:07', 5),
 (8, 5, 3.00, 0, '2021-05-07 12:29:24', 6),
-(9, 6, 12.50, 0, '2021-05-07 12:29:24', 6);
+(9, 6, 12.50, 0, '2021-05-07 12:29:24', 6),
+(10, 4, 15.00, 0, '2021-05-10 09:19:30', 7),
+(11, 8, 200.00, 0, '2021-05-13 20:48:15', 8),
+(12, 8, 200.00, 0, '2021-05-13 20:48:15', 8),
+(13, 4, 15.00, 0, '2021-05-13 20:48:15', 8);
 
 -- --------------------------------------------------------
 
@@ -157,7 +165,9 @@ INSERT INTO `receipts` (`receipt_id`, `receipt_code`, `user_id`, `receipt_subtot
 (3, 'abcde', 1, 12000.00, 12000.00, '2021-04-30 14:56:32'),
 (4, 'abcde', 7, 24000.00, 24000.00, '2021-05-02 20:26:30'),
 (5, 'abcde', 1, 12000.00, 12000.00, '2021-05-06 08:58:07'),
-(6, 'abcde', 9, 15.50, 15.50, '2021-05-07 12:29:24');
+(6, 'abcde', 9, 15.50, 15.50, '2021-05-07 12:29:24'),
+(7, 'abcde', 13, 15.00, 15.00, '2021-05-10 09:19:30'),
+(8, 'abcde', 9, 415.00, 415.00, '2021-05-13 20:48:15');
 
 -- --------------------------------------------------------
 
@@ -212,9 +222,8 @@ INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `email`, `password`, 
 (5, ' Frank', 'William', 'frankwilliam@gmail.com', '$2y$10$qXYMdJv.78EdHEhx.11jSu4jdYTwqUscJekLoR4rq/qIUh8Ov5oBS', '2021-02-08 18:33:15', 'user'),
 (6, ' Maria', 'Robinson', 'maria1@gmail.com', '$2y$10$wP.p/VsmySUxZGEOMrx/EO3Qmj10F98u3rNUoKv9INupFGwbFaUfa', '2021-03-29 19:27:48', 'user'),
 (7, ' Resh', 'Mahabir', 'resh14mahabir@gmail.com', '$2y$10$7WtxAZdlAx9QpwywhY8V0.HtTl4J5tmm3gGkb0JEGaCfh/0hZnSQG', '2021-05-02 20:16:07', 'user'),
-(9, ' Dominic ', 'Celestine', 'dominiccelestine23@gmail.com', '$2y$10$QuH1IjtNr6am9kl7dOMPzedAHWtZHxxcX65p14ExPYjQUDZ6K3zoO', '2021-05-07 12:04:43', 'user'),
-(11, ' fsfas', 'fdg', 'gsdgsz3@gmail.com', '$2y$10$B0fe5rorHPSH3dVbzxMVFOn/G9MZcRjLYxRomva1pfKB/gRIvKf.e', '2021-05-08 08:21:07', 'user'),
-(12, ' Dominic', 'Celestine', 'dominiccelestine23@gmail.com', '$2y$10$JD91.RFR/KPVtiNu5U3ZeeesUdIttVr1pBKv7/bo0SIG8RUJdAkmO', '2021-05-09 10:42:07', 'user');
+(13, ' Ulric', 'Sam', 'dothisthing_23@hotmail.com', '$2y$10$oQOoPh.v8K0.A8uQBZfJs.v5F.cSRBOzbIJ2cPHtcvIrYvgNwnTyG', '2021-05-10 08:58:00', 'user'),
+(14, ' Dominic', 'Celestine', 'dominiccelestine23@gmail.com', '$2y$10$ANGQQCEYvdzLiJRXruiMyOBz.CYiOBKCj5Az6OHRaKOwiLRnZ.oWO', '2021-05-13 14:17:15', 'user');
 
 --
 -- Indexes for dumped tables
@@ -270,7 +279,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `items`
@@ -288,13 +297,13 @@ ALTER TABLE `order_details`
 -- AUTO_INCREMENT for table `purchases`
 --
 ALTER TABLE `purchases`
-  MODIFY `purchase_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `purchase_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `receipts`
 --
 ALTER TABLE `receipts`
-  MODIFY `receipt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `receipt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `review`
@@ -306,7 +315,7 @@ ALTER TABLE `review`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
