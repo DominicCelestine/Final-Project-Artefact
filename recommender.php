@@ -40,7 +40,7 @@
 
 <!-- Gallery item -->
     <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm p-5"><img style="width: 25%" src="<?php echo $item_image; ?>" alt="" class="img-fluid card-img-top">
+        <div class="bg-white rounded shadow-sm p-5"><img style="width: 15%" src="<?php echo $item_image; ?>" alt="" class="img-fluid card-img-top">
             <div class="p-4">
                 <h5><a href="#" class="text-dark"><?php echo $item_title; ?></a></h5>
                 <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
