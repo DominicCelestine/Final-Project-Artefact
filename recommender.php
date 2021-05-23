@@ -39,8 +39,8 @@
 ?>
 
 <!-- Gallery item -->
-    <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm p-5"><img style="width: 15%" src="<?php echo $item_image; ?>" alt="" class="img-fluid card-img-top">
+    <div class="col-lg-3 col-lg-3 col-md-6 mb-2">
+        <div class="bg-white rounded shadow-sm p-5"><img style="width: 50%" src="<?php echo $item_image; ?>" alt="" class="img-fluid card-img-top">
             <div class="p-4">
                 <h5><a href="#" class="text-dark"><?php echo $item_title; ?></a></h5>
                 <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">

@@ -91,6 +91,14 @@ html {
         <p>Due to the current circumstances, most of us are quite limited with our grocery shopping opportunities.</p>
         <p>Oneque Supermarket offers a fixed shipping cost regardless of the size of the order, with delivery available within the same day.</p>
         <p>We ensure 100% customer satisfaction because we care about their customers. Our products are of high quality and the groceries are fresh.</p>
+         
+        </div>
+
+        <div class="about-section">
+        <h1><bold>Contact Us</bold></h1></div>
+        <div class="about">
+        <h2><p> 1-868-290-1139 </p></h2>
+
     </div>
 
 <div class="about-section">
